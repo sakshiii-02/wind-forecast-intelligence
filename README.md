@@ -195,6 +195,9 @@ ChatGPT was used as an AI-assisted development tool during this project for impl
 
 The project code, analytical assumptions, and results were reviewed and tested during development.
 
+## Link
+https://wind-forecast-intelligence-three.vercel.app/
+
 ## Notes and Limitations
 
 - The analysis is limited to January 2026.
