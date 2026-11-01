@@ -1,0 +1,385 @@
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background: #101c2e;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 55px;
+}
+
+.brand-icon {
+  background: #167b58;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.brand h2 {
+  font-size: 19px;
+}
+
+.brand span {
+  font-size: 9px;
+  color: #9ba9ba;
+  letter-spacing: 1px;
+}
+
+.sidebar-label {
+  color: #8998aa;
+  font-size: 10px;
+  margin: 0 0 15px 10px;
+  letter-spacing: 1px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 12px;
+  color: #b8c3d1;
+  border-radius: 8px;
+  margin-bottom: 7px;
+  font-size: 13px;
+}
+
+.nav-item.active {
+  background: #1b7658;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.sidebar-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: #9ba9ba;
+  padding: 15px 10px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+  padding: 35px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 16px;
+}
+
+.header h1 {
+  font-size: 25px;
+  margin-bottom: 7px;
+}
+
+.header p {
+  color: #7c8797;
+  font-size: 13px;
+}
+
+.header-date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px 16px;
+  border: 1px solid #e5e9ef;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.metric-card,
+.chart-card,
+.methodology-note {
+  background: white;
+  border: 1px solid #e8ebf0;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.metric-title {
+  color: #788394;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+.metric-value {
+  font-size: 25px;
+  font-weight: 700;
+  color: #172033;
+  overflow-wrap: anywhere;
+}
+
+.metric-value span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7c8797;
+  margin-left: 5px;
+}
+
+.metric-description {
+  color: #8b95a3;
+  font-size: 11px;
+  margin-top: 12px;
+}
+
+.chart-card {
+  margin-bottom: 22px;
+}
+
+.chart-heading {
+  margin-bottom: 25px;
+}
+
+.chart-heading h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.chart-heading p {
+  color: #8993a1;
+  font-size: 12px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 380px;
+}
+
+.methodology-note h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.methodology-note p {
+  color: #707d8e;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.loading,
+.error {
+  padding: 50px;
+  text-align: center;
+}
+
+.error {
+  color: #c0392b;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.filter-section label {
+  font-size: 13px;
+  color: #788394;
+}
+
+.filter-section input {
+  padding: 10px 12px;
+  border: 1px solid #e5e9ef;
+  border-radius: 8px;
+  background: white;
+  color: #172033;
+  font-size: 13px;
+}
+
+
+.error-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.error-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.error-table th {
+  background: #f7f9fb;
+  color: #788394;
+  font-weight: 600;
+  padding: 14px;
+}
+
+.error-table td {
+  padding: 14px;
+  border-bottom: 1px solid #edf0f4;
+  color: #465267;
+}
+
+.error-table th:first-child,
+.error-table td:first-child {
+  padding-left: 18px;
+}
+
+.error-value {
+  color: #d97706 !important;
+  font-weight: 600;
+}
+
+.error-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+
+.insights-section {
+  margin-bottom: 25px;
+}
+
+.section-heading {
+  margin-bottom: 16px;
+}
+
+.section-heading h2 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.section-heading p {
+  color: #8993a1;
+  font-size: 12px;
+}
+
+.insights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.insight-card {
+  background: white;
+  border: 1px solid #e8ebf0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.insight-icon {
+  display: inline-flex;
+  padding: 10px;
+  border-radius: 9px;
+  margin-bottom: 15px;
+  background: #eef2f7;
+  color: #3978d4;
+}
+
+.insight-over .insight-icon {
+  background: #fff4e5;
+  color: #d97706;
+}
+
+.insight-under .insight-icon {
+  background: #eaf5ff;
+  color: #3978d4;
+}
+
+.insight-title {
+  font-size: 12px;
+  color: #788394;
+  margin-bottom: 12px;
+}
+
+.insight-card h3 {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.insight-description {
+  font-size: 11px;
+  color: #8993a1;
+}
+
+.insight-date {
+  display: block;
+  margin-top: 15px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #465267;
+}
+
+.export-button {
+  padding: 10px 18px;
+  background: #3978d4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  align-self: end;
+  transition: background 0.2s ease;
+}
+
+.export-button:hover {
+  background: #285fae;
+}
+
+@media (max-width: 900px) {
+  .insights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1100px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+
+  .header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .metrics-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+}
